@@ -29,4 +29,8 @@ public class TransactionService {
         return transactionDAO.save(tran);
     }
     
+    public int countByCategorie(int c){
+        return transactionDAO.countByCategorie(c);
+    }
+    
 }

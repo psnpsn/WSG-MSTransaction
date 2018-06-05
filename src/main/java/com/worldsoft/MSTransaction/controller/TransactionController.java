@@ -39,4 +39,9 @@ public class TransactionController {
 	return list;
     }
     
+    @GetMapping("/count/{id}")
+    public int countByCat(@PathVariable int id) {
+        return transactionService.countByCategorie(id);
+    }
+    
 }
